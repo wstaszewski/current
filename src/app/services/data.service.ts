@@ -11,7 +11,7 @@ export class DataService {
 
   public loadComputerConfiguration(name: string): Observable<any> {
     if (name)
-      return this.http.get(`/assets/configurations/${name}.json`);
+      return this.http.get(`assets/configurations/${name}.json`);
 
     return undefined;
   }

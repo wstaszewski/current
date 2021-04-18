@@ -19,7 +19,7 @@ export class NavbarComponent implements OnInit {
   namedButtons: NavItem[] = [];
   iconButtons: NavItem[] = [];
   overflowMenuItems: NavItem[] = [];
-  image: string = '/assets/logo/WS-CC.png';
+  image: string = 'assets/logo/WS-CC.png';
 
   constructor(public navService: NavService, public mediaObserver: MediaObserver) { }
 
