@@ -1,0 +1,111 @@
+@import "~@angular/material/theming";
+//@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+//@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+//@import "~@angular/material/prebuilt-themes/purple-green.css";
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker hue.
+$app-primary: mat-palette($mat-indigo);
+$app-accent: mat-palette($mat-green);
+
+// The warn palette is optional (defaults to red).
+$app-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+
+
+// colors
+$black-white-gradient: linear-gradient(to right, black 0%, white 100%);
+$black-grey-gradient: linear-gradient(to right, black 0%, grey 100%);
+
+$box-shadow: 0 10px 12px rgba(black, 0.35);
+
+/* Extra */
+$primary: mat-color($mat-deep-purple);
+$secondary: mat-palette($mat-amber, A200, A100, A400);
+$ternary: black;
+$dark: #444444;
+
+
+// fonts
+
+@mixin font-title-48 {
+  font-family: 'Roboto-Bold';
+  font-size: 48px;
+}
+
+@mixin font-title-32 {
+  font-family: 'Roboto-Light';
+  font-size: 32px;
+}
+
+@mixin font-title-24 {
+  font-family: 'Roboto-Regular';
+  font-size: 24px;
+}
+
+@mixin font-title-21 {
+  font-family: 'Roboto-Bold';
+  font-size: 21px;
+}
+
+@mixin font-21 {
+  font-family: 'Roboto-Regular';
+  font-size: 21px;
+}
+
+@mixin font-light-21 {
+  font-family: 'Roboto-Light';
+  font-size: 21px;
+}
+
+@mixin font-18 {
+  font-family: 'Roboto-Regular';
+  font-size: 18px;
+}
+
+@mixin font-light-18 {
+  font-family: 'Roboto-Light';
+  font-size: 18px;
+}
+
+@mixin font-hint {
+  font-family: 'Roboto-Light';
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  color: $dih-grey-3;
+  display: inline-block;
+  width: 100%;
+}
+
+@mixin font-hint-small {
+  @include font-hint;
+  font-size: 16px;
+}
+
+@mixin font-16 {
+  font-family: 'Roboto-Regular';
+  font-size: 16px;
+}
+
+@mixin font-light-16 {
+  font-family: 'Roboto-Light';
+  font-size: 16px;
+}
+
+@mixin font-14 {
+  font-family: 'Roboto-Regular';
+  font-size: 14px;
+}
+
+@mixin font-light-14 {
+  font-family: 'Roboto-Light';
+  font-size: 14px;
+}
+
+@mixin font-notification {
+  @include font-light-16;
+  color: $dih-orange;
+}

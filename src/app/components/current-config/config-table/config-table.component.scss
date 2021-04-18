@@ -1,0 +1,86 @@
+@import '/src/app/styles/variables.scss';
+
+table {
+  width: 100%;
+}
+
+tr.example-detail-row {
+  height: 0;
+}
+
+tr.example-element-row:not(.example-expanded-row):hover {
+  background: $primary;
+}
+
+tr.example-element-row:not(.example-expanded-row):active {
+  background: #efefef;
+}
+
+
+.example-element-row td {
+  border-bottom-width: 0;
+}
+
+.example-element-detail {
+  overflow: hidden;
+  display: flex;
+}
+
+.example-element-type {
+  min-width: 80px;
+  border: 2px solid black;
+  padding: 8px;
+  font-weight: lighter;
+  margin: 8px 0;
+  height: 104px;
+}
+
+.mat-column-type {
+  min-width: 175px;
+}
+
+.mat-header-cell {
+  @include font-18;
+  font-weight: bold;
+  color: black;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.input-container {
+  padding: 20px;
+  display: flex;
+}
+
+.example-card {
+  min-width: 800px;
+  min-height: 400px;
+}
+
+.example-header-image {
+  background-size: cover;
+}
+
+.card-actions {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 350px;
+}
+
+mat-icon {
+  cursor: pointer;
+}
+
+.font-18 {
+  @include font-18;
+  font-weight: bold;
+  color: black;
+}
+
+.font-light-18 {
+  @include font-light-18;
+  margin-left: 15px;
+}

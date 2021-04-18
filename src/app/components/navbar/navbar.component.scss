@@ -1,0 +1,19 @@
+@import '/src/app/styles/variables.scss';
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.logo {
+  @include font-title-24;
+  max-width: 200px;
+  padding-left: 10px;
+}
+
+.logo-img {
+  max-height: 40px;
+}

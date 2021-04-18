@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "sanderledegen.angular-follow-selector",
+    "dbaeumer.vscode-eslint",
+    "streetsidesoftware.code-spell-checker",
+    "steoates.autoimport",
+    "tyriar.sort-lines",
+    "visualstudioexptteam.vscodeintellicode",
+    "hookyqr.beautify",
+    "jbockle.jbockle-format-files"
+  ]
+}

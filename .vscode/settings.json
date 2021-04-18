@@ -1,0 +1,17 @@
+{
+  "editor.codeActionsOnSave": ["source.organizeImports", "source.fixAll"],
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "git.ignoreLimitWarning": true,
+  "editor.minimap.enabled": false,
+  "html.format.wrapLineLength": 180,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "files.trimTrailingWhitespace": true
+}

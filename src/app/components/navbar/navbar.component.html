@@ -1,0 +1,54 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <img class="logo-img" [src]="image" alt="Logo" />
+    <div class="logo">My PC</div>
+    <span class="example-spacer"></span>
+    <div fxShow="true" fxHide.lt-md="true">
+      <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+      <a routerLink="/current" routerLinkActive="active-link" mat-button>
+        <mat-icon>table_view</mat-icon>
+        Current
+      </a>
+      <a routerLink="/performance" routerLinkActive="active-link" mat-button disabled>
+        <mat-icon>assessment</mat-icon>
+        Performance
+      </a>
+      <a routerLink="/history" routerLinkActive="active-link" mat-button>
+        <mat-icon>history</mat-icon>
+        History
+      </a>
+      <a routerLink="/user/bob" routerLinkActive="active-link" mat-button disabled>
+        <mat-icon>lock</mat-icon>
+        My Account
+      </a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container fxFlexFill>
+  <mat-sidenav #sidenav>
+    <mat-nav-list>
+      <a href="#" mat-list-item>
+        <mat-icon>notifications</mat-icon>
+        Notifications
+      </a>
+      <a href="#" mat-list-item>
+        <mat-icon>message</mat-icon>
+        Messages
+      </a>
+      <a href="#" mat-list-item>
+        <mat-icon>account_box</mat-icon>
+        My Account
+      </a>
+      <a href="#" mat-list-item>
+        <mat-icon>lock</mat-icon>
+        comming soon
+      </a>
+      <a (click)="sidenav.toggle()" mat-list-item>
+        <mat-icon>close</mat-icon> Close
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
