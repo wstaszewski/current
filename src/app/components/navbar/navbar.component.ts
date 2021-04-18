@@ -1,8 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { MediaChange, MediaObserver } from '@angular/flex-layout';
-import { Subscription } from 'rxjs';
-import { distinctUntilChanged, map } from 'rxjs/operators';
-import { NavItem } from '../../models/navItem';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { NavService } from '../../services/nav.service';
 
 
@@ -13,56 +9,33 @@ import { NavService } from '../../services/nav.service';
 })
 
 export class NavbarComponent implements OnInit {
+  @ViewChild('hamburger') hamburger: ElementRef<HTMLInputElement>;
+  @ViewChild('navLinks') navLinks: ElementRef<HTMLInputElement>;
 
-  watcher: Subscription;
-  navItems: NavItem[];
-  namedButtons: NavItem[] = [];
-  iconButtons: NavItem[] = [];
-  overflowMenuItems: NavItem[] = [];
-  image: string = 'assets/logo/WS-CC.png';
+  wasHamburgerClicked: boolean = false;
+  image: string = 'assets/logo/WS-only.png';
 
-  constructor(public navService: NavService, public mediaObserver: MediaObserver) { }
+  constructor(private readonly navService: NavService) { }
 
   ngOnInit() {
-    // Assume this is a file read or HttpClient request that completes after the first event.
-    this.navService.getNavItems().subscribe((items: NavItem[]) => {
-      this.navItems = items;
-      this.onMediaChange();
 
-      this.mediaObserver.asObservable()
-        .pipe(
-          distinctUntilChanged((prev, curr) => prev[0].mqAlias === curr[0].mqAlias),
-          map((arr: MediaChange[]) => arr.map((change: MediaChange) => this.onMediaChange())),
-        )
-    });
   }
 
   ngOnDestroy() {
-    if (this.watcher) {
-      this.watcher.unsubscribe();
-    }
+
   }
 
-  onMediaChange() {
-    let items = this.navItems.slice();
-    this.namedButtons = [];
-    this.iconButtons = [];
-    this.overflowMenuItems = [];
+  onHambugerClick() {
+    this.navService.toggle();
 
-    if (this.mediaObserver.isActive('xs')) {
-      this.iconButtons = this.iconButtons.concat(items.splice(0, 5));
-    } else if (this.mediaObserver.isActive('sm')) {
-      this.namedButtons = this.namedButtons.concat(items.splice(0, 6));
-    } else if (this.mediaObserver.isActive('md')) {
-      this.namedButtons = this.namedButtons.concat(items.splice(0, 8));
-    } else if (this.mediaObserver.isActive('lg')) {
-      this.namedButtons = this.namedButtons.concat(items.splice(0, 12));
-    } else if (this.mediaObserver.isActive('xl')) {
-      this.namedButtons = this.namedButtons.concat(items.splice(0, 16));
+    //this.wasHamburgerClicked = !this.wasHamburgerClicked;
+    this.navLinks.nativeElement.classList.toggle("open");
+
+    for (let item of Array.from(this.navLinks.nativeElement.children)) {
+      item.classList.toggle("fade");
     }
 
-    if (items.length > 0) {
-      this.overflowMenuItems = items;
-    }
+    this.hamburger.nativeElement.classList.toggle("toggle");
   }
+
 }

@@ -1,25 +1,16 @@
-import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { NavItem } from '../models/navItem';
+import { EventEmitter, Injectable, Output } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 }) export class NavService {
-  private navItems = [
-    { label: 'current', path: 'current', iconName: 'build' },
-    { label: 'performance', path: 'performance', iconName: 'assessment' },
-    { label: 'history', path: 'history', iconName: 'history' },
-    { label: 'comming soon', path: 'lock', iconName: 'lock' },
-    { label: 'current', path: 'current', iconName: 'build' },
-    { label: 'performance', path: 'performance', iconName: 'assessment' },
-    { label: 'history', path: 'history', iconName: 'history' },
-    { label: 'comming soon', path: 'lock', iconName: 'lock' }
-  ];
+  isOpen = false;
+  @Output() change: EventEmitter<boolean> = new EventEmitter();
 
   constructor() { }
 
-  getNavItems(): Observable<NavItem[]> {
-    return of(this.navItems);
+  toggle() {
+    this.isOpen = !this.isOpen;
+    this.change.emit(this.isOpen);
   }
 }
 

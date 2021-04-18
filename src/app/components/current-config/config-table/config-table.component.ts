@@ -1,8 +1,9 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { ComputerElement } from '../../../models/ComputerElement';
 import { DataService } from './../../../services/data.service';
+import { NavService } from './../../../services/nav.service';
 
 @Component({
   selector: 'app-config-table',
@@ -18,19 +19,26 @@ import { DataService } from './../../../services/data.service';
 })
 export class ConfigTableComponent implements OnInit {
   @Input() configuration: string;
+  @ViewChild('table') table: ElementRef<HTMLInputElement>;
 
   dataSource = new MatTableDataSource();
   columnsToDisplay = ['action', 'type', 'producer', 'name'];
   detailsToDisplay = ['producer', 'name', 'parameters'];
   expandedElement: ComputerElement | null;
   filterValue: string = '';
-  constructor(private readonly dataService: DataService) { }
+  isOpen = false;
+
+  constructor(private readonly dataService: DataService, private readonly navService: NavService) { }
 
   ngOnInit(): void {
     this.dataService.loadComputerConfiguration(this.configuration)
       .subscribe(config => {
         this.dataSource = new MatTableDataSource((config as ComputerElement[]));
-      })
+      });
+
+    this.navService.change.subscribe(isOpen => {
+      this.isOpen = isOpen;
+    });
   }
 
   applyFilter(event: Event) {

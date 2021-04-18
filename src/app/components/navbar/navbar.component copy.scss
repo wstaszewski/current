@@ -1,11 +1,44 @@
 @import '/src/app/styles/variables.scss';
 
-body {
-  background: white;
-  color: $ternary;
-  font-size: 14px;
-  margin: 0;
+.companyName {
+  font-size: 150%;
+}
 
+.mat-toolbar {
+  height: 7vh;
+}
+
+div {
+  overflow: inherit;
+}
+
+.mat-sidenav-container {
+  background-color: lightskyblue;
+  min-height: 93vh !important;
+}
+
+a {
+  text-decoration: none;
+  font-size: 110%;
+  white-space: normal;
+}
+
+button {
+  font-size: 110%;
+  min-width: min-content;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-sidenav-content {
+  font-size: 200%;
+  text-align: center;
 }
 
 .logo {
@@ -16,182 +49,4 @@ body {
 
 .logo-img {
   max-height: 40px;
-  margin-left: -10px;
-}
-
-.image {
-  max-height: 50px;
-  outline: none;
-  cursor: pointer;
-}
-
-.navbar {
-  align-items: center;
-  background: $primary;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: row;
-  padding: 10px 30px;
-}
-
-.push-left {
-  margin-left: auto;
-}
-
-/* Menu */
-.hamburger {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  display: none;
-  outline: none;
-  height: 30px;
-  position: relative;
-  width: 30px;
-  z-index: 101;
-
-  @media screen and (max-width: 768px) {
-    display: inline-block;
-  }
-
-  &-line {
-    background: $ternary;
-    height: 3px;
-    position: absolute;
-    left: 0;
-    transition: all .2s ease-out;
-    width: 100%;
-
-    .hamburger:hover & {
-      background: #777;
-    }
-
-    &-top {
-      top: 3px;
-    }
-
-    .menu-active &-top {
-      top: 50%;
-      transform: rotate(45deg) translatey(-50%);
-    }
-
-    &-middle {
-      top: 50%;
-      transform: translatey(-50%);
-    }
-
-    .menu-active &-middle {
-      left: 50%;
-      opacity: 0;
-      width: 0;
-    }
-
-    &-bottom {
-      bottom: 3px;
-    }
-
-    .menu-active &-bottom {
-      bottom: 50%;
-      transform: rotate(-45deg) translatey(50%);
-    }
-  }
-}
-
-.nav-menu {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  transition: all .25s ease-in;
-  z-index: 101;
-
-  @media screen and (max-width: 768px) {
-    background: $primary;
-    flex-direction: column;
-    justify-content: center;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: translatey(-100%);
-    text-align: center;
-
-    .menu-active & {
-      transform: translatey(0%);
-      opacity: 1;
-    }
-  }
-
-  .menu-item {
-
-    &.active {
-      background: red($color: #000000);
-
-      a {
-        color: white;
-      }
-    }
-
-
-    a {
-      @include font-18;
-      color: black;
-      display: block;
-      line-height: 30px;
-      margin: 0px 10px;
-      text-decoration: none;
-      text-transform: uppercase;
-
-      &:hover {
-        @include font-title-21;
-        color: black;
-        text-decoration: underline;
-      }
-
-      @media screen and (max-width: 768px) {
-        font-size: 20px;
-        margin: 8px;
-      }
-    }
-  }
-
-
-}
-
-.sub-nav {
-  border: 1px solid #ccc;
-  display: none;
-  position: absolute;
-  background-color: $primary;
-  padding: 5px 5px;
-  list-style: none;
-  width: 230px;
-
-  @media screen and (max-width: 768px) {
-    position: relative;
-    width: 100%;
-    display: none;
-    background-color: rgba(0, 0, 0, 0.20);
-    box-sizing: border-box;
-  }
-}
-
-.nav__link {
-  &:hover+.sub-nav {
-    display: block;
-
-  }
-}
-
-.sub-nav {
-  &:hover {
-    display: block;
-  }
-}
-
-.disabled {
-  pointer-events: none; //This makes it not clickable
-  opacity: 0.6; //This grays it out to look disabled
 }

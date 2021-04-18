@@ -19,10 +19,10 @@
     "parameters": "OC @ 4400 MHz",
     "quantity": "1",
     "description": "",
-    "img": "",
+    "img": "https://www.intel.com/content/dam/www/global/ark/badges/54040_128.gif/jcr:content/renditions/_64.gif",
     "specs": "https://ark.intel.com/content/www/pl/pl/ark/products/52214/intel-core-i7-2600k-processor-8m-cache-up-to-3-80-ghz.html",
-    "shopName": "",
-    "shopLink": ""
+    "shopName": "Morele",
+    "shopLink": "https://www.morele.net/procesor-intel-3-4ghz-8-mb-box-bx80623i72600k-372029/"
   },
   {
     "position": 3,
@@ -32,10 +32,10 @@
     "parameters": "",
     "quantity": "1",
     "description": "",
-    "img": "",
-    "specs": "https://pclab.pl/art44739-47.html",
-    "shopName": "",
-    "shopLink": ""
+    "img": "http://thermalright.com/wp-content/uploads/2017/05/350x350-1-13.jpg",
+    "specs": "http://thermalright.com/product/venomous-x/",
+    "shopName": "Proline",
+    "shopLink": "https://proline.pl/?p=TR+VENOMOUS+X"
   },
   {
     "position": 4,
@@ -45,7 +45,7 @@
     "parameters": "4GB DDR3-1333",
     "quantity": "2",
     "description": "",
-    "img": "",
+    "img": "https://www.gskill.com/_upload/images/153232666210.png",
     "specs": "https://www.gskill.com/specification/165/177/1532326662/F3-12800CL8D-4GBECO-Specification",
     "shopName": "",
     "shopLink": ""
@@ -58,7 +58,7 @@
     "parameters": "2GB DDR3-1333",
     "quantity": "2",
     "description": "",
-    "img": "",
+    "img": "https://www.gskill.com/_upload/images/1807251841370.png",
     "specs": "https://www.gskill.com/product/165/183/1532515223/F3-12800CL8D-2GBTDTridentDDR3-1600MHz-CL8-8-8-1.60V2GB-(2x1GB)",
     "shopName": "",
     "shopLink": ""
@@ -71,10 +71,10 @@
     "parameters": "",
     "quantity": "1",
     "description": "",
-    "img": "",
-    "specs": "",
-    "shopName": "",
-    "shopLink": ""
+    "img": "https://images.samsung.com/is/image/samsung/p6pim/pl/mz-76e500b-eu/gallery/pl-860-evo-sata-3-2-5-inch-ssd-mz-76e500b-eu-351528748?$684_547_PNG$",
+    "specs": "https://www.samsung.com/pl/memory-storage/sata-ssd/860-evo-sata-3-2-5-inch-ssd-500gb-mz-76e500b-eu/",
+    "shopName": "Morele",
+    "shopLink": "https://www.morele.net/dysk-ssd-samsung-860-evo-500-gb-2-5-sata-iii-mz-76e500b-eu-1773653/"
   },
   {
     "position": 7,

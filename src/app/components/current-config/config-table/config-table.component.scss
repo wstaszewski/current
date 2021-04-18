@@ -39,6 +39,16 @@ tr.example-element-row:not(.example-expanded-row):active {
   min-width: 175px;
 }
 
+.hidden {
+  transition: 0.25s linear all;
+  opacity: 0;
+}
+
+.shown {
+  transition: 0.75s linear all;
+  opacity: 1;
+}
+
 .mat-header-cell {
   @include font-18;
   font-weight: bold;
@@ -51,7 +61,8 @@ tr.example-element-row:not(.example-expanded-row):active {
 }
 
 .input-container {
-  padding: 20px;
+  padding: 10px;
+  padding-top: 100px;
   display: flex;
 }
 

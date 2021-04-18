@@ -7,7 +7,7 @@
   <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
 </mat-form-field>-->
 
-<table mat-table [dataSource]="dataSource" multiTemplateDataRows class="mat-elevation-z8">
+<table mat-table [ngClass]="isOpen ? 'hidden' : 'shown'" [dataSource]="dataSource" multiTemplateDataRows class="mat-elevation-z8" #table>
   <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay">
     <ng-container *ngIf="column !== 'action'; else action">
       <th mat-header-cell *matHeaderCellDef> {{column | titlecase}} </th>
