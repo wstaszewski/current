@@ -16,7 +16,7 @@
         <mat-icon>assessment</mat-icon>
         Performance
       </a>
-      <a routerLink="/history" routerLinkActive="active-link" mat-button>
+      <a routerLink="/history" routerLinkActive="active-link" mat-button disabled>
         <mat-icon>history</mat-icon>
         History
       </a>
@@ -31,19 +31,19 @@
 <mat-sidenav-container fxFlexFill>
   <mat-sidenav #sidenav>
     <mat-nav-list>
-      <a href="#" mat-list-item>
-        <mat-icon>notifications</mat-icon>
-        Notifications
+      <a routerLink="/current" routerLinkActive="active-link" mat-list-item>
+        <mat-icon>table_view</mat-icon>
+        Current
       </a>
-      <a href="#" mat-list-item>
-        <mat-icon>message</mat-icon>
-        Messages
+      <a routerLink="/performance" routerLinkActive="active-link" mat-list-item disabled>
+        <mat-icon>assessment</mat-icon>
+        Performance
       </a>
-      <a href="#" mat-list-item>
-        <mat-icon>account_box</mat-icon>
-        My Account
+      <a routerLink="/history" routerLinkActive="active-link" mat-list-item disabled>
+        <mat-icon>history</mat-icon>
+        History
       </a>
-      <a href="#" mat-list-item>
+      <a routerLink="/user/bob" routerLinkActive="active-link" mat-list-item disabled>
         <mat-icon>lock</mat-icon>
         comming soon
       </a>
