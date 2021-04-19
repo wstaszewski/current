@@ -61,9 +61,14 @@ a.disabled {
   cursor: default;
 }
 
-.nav-links li a:NOT(.active-link):hover {
+.nav-links li:hover a:NOT(.active-link) {
   color: red;
+
+  .mat-icon {
+    color: red;
+  }
 }
+
 
 .nav-links li {
   position: relative;

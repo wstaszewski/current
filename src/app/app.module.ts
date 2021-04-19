@@ -56,8 +56,7 @@ import { CurrentConfigComponent } from './components/current-config/current-conf
 import { HistoryComponent } from './components/history/history.component';
 import { TimelineComponent } from './components/history/timeline/timeline.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-
-
+import { PerformanceComponent } from './components/performance/performance.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +69,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     InputComponent,
     TimelineComponent,
     LoadingAnimationComponent,
+    PerformanceComponent,
   ],
   imports: [
     BrowserModule,
@@ -93,7 +93,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MatAutocompleteModule,
     MatBadgeModule,
     MatBottomSheetModule,
-    MatButtonModule,
     MatButtonToggleModule,
     MatCardModule,
     MatCheckboxModule,
@@ -104,8 +103,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MatDividerModule,
     MatExpansionModule,
     MatGridListModule,
-    MatIconModule,
-    MatListModule,
     MatMenuModule,
     MatNativeDateModule,
     MatPaginatorModule,
@@ -114,14 +111,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MatRadioModule,
     MatRippleModule,
     MatSelectModule,
-    MatSidenavModule,
     MatSliderModule,
     MatSlideToggleModule,
     MatSnackBarModule,
     MatSortModule,
-    MatTableModule,
     MatTabsModule,
-    MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
     OverlayModule,

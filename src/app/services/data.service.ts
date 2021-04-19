@@ -15,4 +15,11 @@ export class DataService {
 
     return undefined;
   }
+
+  public loadComputerPerformance(name: string): Observable<any> {
+    if (name)
+      return this.http.get(`assets/benchmarks/${name}.json`);
+
+    return undefined;
+  }
 }

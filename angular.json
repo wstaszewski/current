@@ -42,6 +42,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/assets/logo/",
+              "src/assets/icons/",
               "src/assets/configurations/"
             ],
             "index": "src/index.html",
@@ -104,6 +105,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/assets/logo/*",
+              "src/assets/icons/*",
               "src/assets/configurations/*"
             ],
             "karmaConfig": "karma.conf.js",
@@ -122,6 +124,11 @@
       "root": "",
       "schematics": {},
       "sourceRoot": "src"
+    }
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "style": "scss"
     }
   },
   "version": 1

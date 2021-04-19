@@ -1,0 +1,39 @@
+.table-heade-title {
+  color: black;
+  font-size: 20px;
+  padding-left: 25px;
+  display: flex;
+}
+
+.mat-panel-img {
+  height: 20px;
+  width: 20px;
+  padding-right: 15px;
+}
+
+
+.example-action-buttons {
+  padding-bottom: 20px;
+}
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-form-field+.mat-form-field {
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 800px) {
+  .table-header-title {
+    padding-top: 40px;
+
+  }
+
+}

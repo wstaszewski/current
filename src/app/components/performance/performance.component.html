@@ -1,0 +1,38 @@
+<h1 class="table-header--title">Performance</h1>
+
+<mat-accordion class="example-headers-align">
+
+  <mat-expansion-panel *ngFor="let panel of panels">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <img class="mat-panel-img" [src]="panel.icon">
+        {{panel.type}}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{panel.producer}} {{panel.name}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+  </mat-expansion-panel>
+
+
+
+  <mat-expansion-panel disabled>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Destination
+      </mat-panel-title>
+      <mat-panel-description>
+
+        <mat-icon>map</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <mat-label></mat-label>
+      <input matInput>
+    </mat-form-field>
+  </mat-expansion-panel>
+
+
+</mat-accordion>
