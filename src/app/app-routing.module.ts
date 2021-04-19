@@ -5,7 +5,7 @@ import { CurrentConfigComponent } from './components/current-config/current-conf
 import { HistoryComponent } from './components/history/history.component';
 
 const routes: Routes = [
-  { path: '', component: CurrentConfigComponent },
+  { path: '', redirectTo: '/current', pathMatch: 'full' },
   { path: 'current', component: CurrentConfigComponent },
   { path: 'history', component: HistoryComponent },
   { path: 'about', component: AboutComponent }
