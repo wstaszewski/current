@@ -1,32 +1,11 @@
 <div class="input-container">
-  <div style="margin-top: 10px; cursor: none;">
+  <div style="margin-top: 10px; margin-right: 5px; cursor: none;">
     <mat-icon>search</mat-icon>
   </div>
   <app-input [text]="'Filter'" (input)="applyFilter($event)"></app-input>
 </div>
-<!--<mat-form-field>
-  <mat-label *ngIf="filterValue?.length < 1">Filter</mat-label>
-  <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
-</mat-form-field>-->
 
 <table mat-table [ngClass]="isOpen ? 'hidden' : 'shown'" [dataSource]="dataSource" multiTemplateDataRows class="mat-elevation-z8" #table>
-
-  <!--
-    <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay">
-    <ng-container *ngIf="column !== 'action'; else action">
-      <th mat-header-cell *matHeaderCellDef> {{column | titlecase}} </th>
-      <td mat-cell *matCellDef="let element"> {{element[column]}} </td>
-    </ng-container>
-    <ng-template #action>
-      <th mat-header-cell *matHeaderCellDef></th>
-      <td mat-cell *matCellDef="let element">
-        <mat-icon>{{expandedElement === element ? 'expand_less' : 'expand_more'}}</mat-icon>
-      </td>
-    </ng-template>
-  </ng-container>
-
-  -->
-
 
   <ng-container matColumnDef="action">
     <th mat-header-cell *matHeaderCellDef></th>
@@ -56,6 +35,8 @@
 
     <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplay.length">
       <div class="example-element-detail" [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
+
+
         <mat-card class="example-card" style="padding: 25px; margin-bottom: 20px;">
 
           <mat-card-header>

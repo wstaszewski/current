@@ -11,21 +11,28 @@
   </div>
   <ul class="nav-links" #navLinks>
     <li>
-      <a routerLink="/current" routerLinkActive="active-link">Current</a>
+      <a routerLink="/current" routerLinkActive="active-link" mat-button>
+        <mat-icon>table_view</mat-icon>
+        Current
+      </a>
     </li>
     <li>
-      <a class="disabled" style="color: grey;">Performance</a>
+      <a class="disabled" style="color: grey;" mat-button>
+        <mat-icon style="color: grey;">assessment</mat-icon>
+        Performance
+      </a>
     </li>
     <li>
-      <a class="disabled" style="color: grey;">History</a>
+      <a class="disabled" style="color: grey;" mat-button>
+        <mat-icon style="color: grey;">history</mat-icon>
+        History
+      </a>
     </li>
     <li>
-      <a class="disabled" style="color: grey;">Coming soon</a>
+      <a class="disabled" style="color: grey;" mat-button>
+        <mat-icon style="color: grey;">lock</mat-icon>
+        Coming soon
+      </a>
     </li>
-
-    <!--
-    <li><button class="login-button" href="#">Login</button></li>
-    <li><button class="join-button" href="#">Join</button></li>
-    -->
   </ul>
 </nav>

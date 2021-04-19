@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   color: #f2f5f7;
-  font-family: sans-serif;
   letter-spacing: 1px;
   font-weight: 300;
 }
@@ -14,7 +13,7 @@ body {
 }
 
 nav {
-  height: 6rem;
+  height: 50px;
   width: 101%;
   background-color: #131418;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
@@ -35,6 +34,7 @@ nav {
 }
 
 .logo img {
+  margin-top: 5px;
   max-height: 40px;
   //width: 5rem;
 }
@@ -61,12 +61,17 @@ a.disabled {
   cursor: default;
 }
 
-.nav-links li a:hover {
-  color: #61DAFB;
+.nav-links li a:NOT(.active-link):hover {
+  color: red;
 }
 
 .nav-links li {
   position: relative;
+}
+
+.active-link {
+  background-color: red;
+  font-weight: bold;
 }
 
 .nav-links li a::before {
@@ -74,7 +79,6 @@ a.disabled {
   display: block;
   height: 3px;
   width: 0%;
-  background-color: #61DAFB;
   position: absolute;
   transition: all ease-in-out 250ms;
   margin: 0 0 0 10%;
@@ -82,42 +86,6 @@ a.disabled {
 
 .nav-links li a:hover::before {
   width: 80%;
-}
-
-/*Styling Buttons*/
-.login-button {
-  background-color: transparent;
-  border: 1.5px solid #f2f5f7;
-  border-radius: 2em;
-  padding: 0.6rem 0.8rem;
-  margin-left: 2vw;
-  font-size: 1rem;
-  cursor: pointer;
-
-}
-
-.login-button:hover {
-  color: #131418;
-  background-color: #f2f5f7;
-  border: 1.5px solid #f2f5f7;
-  transition: all ease-in-out 350ms;
-}
-
-.join-button {
-  color: #131418;
-  background-color: #61DAFB;
-  border: 1.5px solid #61DAFB;
-  border-radius: 2em;
-  padding: 0.6rem 0.8rem;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.join-button:hover {
-  color: #f2f5f7;
-  background-color: transparent;
-  border: 1.5px solid #f2f5f7;
-  transition: all ease-in-out 350ms;
 }
 
 /*Styling Hamburger Icon*/
@@ -219,6 +187,7 @@ a.disabled {
 .toggle .line2 {
   transition: all 0.7s ease;
   width: 0;
+  opacity: 0;
 }
 
 .toggle .line3 {
