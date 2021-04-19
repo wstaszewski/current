@@ -1,0 +1,10 @@
+<svg id="Component_2_1" data-name="Component 2 – 1" xmlns="http://www.w3.org/2000/svg" width="408" height="192" viewBox="0 0 408 192">
+  <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(8)" fill="red" stroke="#707070" stroke-width="1">
+    <rect width="393" height="192" stroke="none"/>
+    <rect x="0.5" y="0.5" width="392" height="191" fill="none"/>
+  </g>
+  <text id="_" data-name="&lt;" transform="translate(0 137)" fill="#fff" font-size="117" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">&lt;</tspan></text>
+  <text id="WS" transform="translate(97 142)" fill="#fff" font-size="121" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">WS</tspan></text>
+  <text id="_2" data-name="/" transform="translate(303 127)" fill="#fff" font-size="78" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">/</tspan></text>
+  <text id="_3" data-name="&lt;" transform="matrix(-1, 0, 0, 1, 408, 137)" fill="#fff" font-size="117" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">&lt;</tspan></text>
+</svg>
