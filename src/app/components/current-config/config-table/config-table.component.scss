@@ -1,5 +1,9 @@
 @import '/src/app/styles/variables.scss';
 
+body {
+  overflow-x: hidden;
+}
+
 table {
   width: 100%;
 }
@@ -15,7 +19,6 @@ tr.example-element-row:not(.example-expanded-row):hover {
 tr.example-element-row:not(.example-expanded-row):active {
   background: #efefef;
 }
-
 
 .example-element-row td {
   border-bottom-width: 0;
@@ -33,6 +36,10 @@ tr.example-element-row:not(.example-expanded-row):active {
   font-weight: lighter;
   margin: 8px 0;
   height: 104px;
+}
+
+.mat-column-action {
+  width: 50px;
 }
 
 .mat-column-type {
@@ -62,7 +69,6 @@ tr.example-element-row:not(.example-expanded-row):active {
 
 .input-container {
   padding: 10px;
-  padding-top: 100px;
   display: flex;
 }
 
@@ -81,7 +87,7 @@ tr.example-element-row:not(.example-expanded-row):active {
   grid-column-gap: 350px;
 }
 
-mat-icon {
+.mat-icon {
   cursor: pointer;
 }
 
@@ -94,4 +100,27 @@ mat-icon {
 .font-light-18 {
   @include font-light-18;
   margin-left: 15px;
+}
+
+
+@media screen and (max-width: 800px) {
+.mat-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+  .mat-column-type {
+    flex: 10px;
+    max-width: 200px;
+  }
+
+  .mat-column-producer {
+    display: none;
+  }
+
+  .mat-column-name {
+    flex: 50px;
+    max-width: 250px;
+  }
+
 }
