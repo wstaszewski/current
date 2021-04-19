@@ -15,12 +15,13 @@ body {
 
 nav {
   height: 6rem;
-  width: 100vw;
+  width: 101%;
   background-color: #131418;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   position: fixed;
   z-index: 110;
+  margin-left: -10px;
 }
 
 /*Styling logo*/
@@ -44,7 +45,8 @@ nav {
   list-style: none;
   width: 88vw;
   padding: 0 0.7vw;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  margin-right: 25px;
   align-items: center;
   text-transform: uppercase;
 }
@@ -135,6 +137,7 @@ a.disabled {
 @media screen and (max-width: 800px) {
   nav {
     position: fixed;
+    width: 100vw;
     z-index: 103;
   }
 
@@ -154,12 +157,14 @@ a.disabled {
     background: #131418;
     height: 100vh;
     width: 100%;
+    justify-content: space-evenly;
     flex-direction: column;
     clip-path: circle(50px at 90% -20%);
     -webkit-clip-path: circle(50px at 90% -10%);
     transition: all 1s ease-out;
     pointer-events: none;
   }
+
 
   .nav-links.open {
     clip-path: circle(1000px at 90% -10%);

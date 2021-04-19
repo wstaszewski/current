@@ -1,9 +1,11 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { MediaObserver } from '@angular/flex-layout';
 import { MatTableDataSource } from '@angular/material/table';
 import { ComputerElement } from '../../../models/ComputerElement';
 import { DataService } from './../../../services/data.service';
 import { NavService } from './../../../services/nav.service';
+
 
 @Component({
   selector: 'app-config-table',
@@ -19,6 +21,7 @@ import { NavService } from './../../../services/nav.service';
 })
 export class ConfigTableComponent implements OnInit {
   @Input() configuration: string;
+
   @ViewChild('table') table: ElementRef<HTMLInputElement>;
 
   dataSource = new MatTableDataSource();
@@ -27,8 +30,10 @@ export class ConfigTableComponent implements OnInit {
   expandedElement: ComputerElement | null;
   filterValue: string = '';
   isOpen = false;
+  breakpoint: number;
 
-  constructor(private readonly dataService: DataService, private readonly navService: NavService) { }
+
+  constructor(private readonly dataService: DataService, private readonly navService: NavService, private mediaObserver: MediaObserver) { }
 
   ngOnInit(): void {
     this.dataService.loadComputerConfiguration(this.configuration)
@@ -39,6 +44,12 @@ export class ConfigTableComponent implements OnInit {
     this.navService.change.subscribe(isOpen => {
       this.isOpen = isOpen;
     });
+
+    this.breakpoint = (window.innerWidth <= 800) ? 1 : 2;
+  }
+
+  onResize(event) {
+    this.breakpoint = (event.target.innerWidth <= 800) ? 1 : 2;
   }
 
   applyFilter(event: Event) {
