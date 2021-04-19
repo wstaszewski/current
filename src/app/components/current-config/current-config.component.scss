@@ -1,8 +1,14 @@
 .table-header--title {
   color: black;
-  font-weight: 100;
   font-size: 20px;
-  padding-top: 50px;
   padding-left: 25px;
   display: flex;
+}
+
+@media screen and (max-width: 800px) {
+  .table-header--title {
+    padding-top: 40px;
+
+  }
+
 }

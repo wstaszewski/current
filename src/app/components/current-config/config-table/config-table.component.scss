@@ -2,7 +2,7 @@
 
 body {
   overflow-x: hidden;
-  padding-top:50px;
+  padding-top: 50px;
 }
 
 table {
@@ -43,6 +43,11 @@ tr.example-element-row:not(.example-expanded-row):active {
   font-weight: lighter;
   margin: 8px 0;
   height: 104px;
+
+}
+
+.mat-list-details {
+  margin-top: -10px;
 }
 
 .mat-column-action {
@@ -100,7 +105,7 @@ tr.example-element-row:not(.example-expanded-row):active {
 .card-actions {
   display: grid;
   grid-auto-flow: column;
-  grid-column-gap: 350px;
+  //grid-column-gap: 350px;
 }
 
 .mat-icon {
@@ -120,13 +125,37 @@ tr.example-element-row:not(.example-expanded-row):active {
 
 
 @media screen and (max-width: 800px) {
-.mat-table {
-  width: 100%;
-  table-layout: fixed;
-}
+
+  .mat-list-item {
+    height: 30px !important;
+  }
+
+  .mat-list-details {
+    margin-top: 0px;
+  }
+
+  .mat-header-row {
+    height: 50px;
+  }
+
+  .mat-elevation-z8 {
+    height: calc(100vh - 180px);
+  }
+
+  .input-container {
+    padding-left: 10px;
+    margin-top: -15px;
+    display: flex;
+  }
+
+  .mat-table {
+    width: 100%;
+    table-layout: fixed;
+  }
 
   .mat-column-type {
     flex: 10px;
+    width: 150px;
   }
 
   .mat-column-producer {
@@ -134,7 +163,7 @@ tr.example-element-row:not(.example-expanded-row):active {
   }
 
   .mat-column-name {
-    max-width: 250px;
+    width: 135px;
   }
 
 }
