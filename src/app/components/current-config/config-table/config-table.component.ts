@@ -45,11 +45,11 @@ export class ConfigTableComponent implements OnInit {
       this.isOpen = isOpen;
     });
 
-    this.breakpoint = (window.innerWidth <= 800) ? 1 : 2;
+    this.breakpoint = (window.innerWidth < 800) ? 1 : 2;
   }
 
   onResize(event) {
-    this.breakpoint = (event.target.innerWidth <= 800) ? 1 : 2;
+    this.breakpoint = (event.target.innerWidth < 800) ? 1 : 2;
   }
 
   applyFilter(event: Event) {

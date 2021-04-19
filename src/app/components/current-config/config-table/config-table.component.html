@@ -5,103 +5,103 @@
   <app-input [text]="'Filter'" (input)="applyFilter($event)"></app-input>
 </div>
 
-<table mat-table [ngClass]="isOpen ? 'hidden' : 'shown'" [dataSource]="dataSource" multiTemplateDataRows class="mat-elevation-z8" #table>
+<div class="mat-elevation-z8">
 
-  <ng-container matColumnDef="action">
-    <th mat-header-cell *matHeaderCellDef></th>
-    <td mat-cell *matCellDef="let element">
-      <mat-icon>{{expandedElement === element ? 'expand_less' : 'expand_more'}}</mat-icon>
-    </td>
-  </ng-container>
+  <table mat-table [ngClass]="isOpen ? 'hidden' : 'shown'" [dataSource]="dataSource" multiTemplateDataRows #table>
 
-  <ng-container matColumnDef="type">
-    <th mat-header-cell *matHeaderCellDef> Type </th>
-    <td mat-cell *matCellDef="let element"> {{element.type}} </td>
-  </ng-container>
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let element">
+        <mat-icon>{{expandedElement === element ? 'expand_less' : 'expand_more'}}</mat-icon>
+      </td>
+    </ng-container>
 
-  <ng-container matColumnDef="producer">
-    <th mat-header-cell *matHeaderCellDef> Producer </th>
-    <td mat-cell *matCellDef="let element"> {{element.producer}} </td>
-  </ng-container>
+    <ng-container matColumnDef="type">
+      <th mat-header-cell *matHeaderCellDef> Type </th>
+      <td mat-cell *matCellDef="let element"> {{element.type}} </td>
+    </ng-container>
 
-  <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef> Name </th>
-    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
-  </ng-container>
+    <ng-container matColumnDef="producer">
+      <th mat-header-cell *matHeaderCellDef> Producer </th>
+      <td mat-cell *matCellDef="let element"> {{element.producer}} </td>
+    </ng-container>
 
-
-  <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
-  <ng-container matColumnDef="expandedDetail">
-
-    <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplay.length">
-      <div class="example-element-detail" [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
 
 
-        <mat-card class="example-card" style="padding: 25px; margin-bottom: 20px;">
+    <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
+    <ng-container matColumnDef="expandedDetail">
 
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image">
-              <mat-icon>build</mat-icon>
-            </div>
-            <mat-card-title>{{element.name}}</mat-card-title>
-            <mat-card-subtitle>{{element.type}}</mat-card-subtitle>
-          </mat-card-header>
+      <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplay.length">
+        <div class="example-element-detail" [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
+          <mat-card class="example-card">
 
-          <mat-card-content>
-            <mat-grid-list [cols]="breakpoint" rowHeight="1.5:1" (window:resize)="onResize($event)">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image">
+                <mat-icon>build</mat-icon>
+              </div>
+              <mat-card-title>{{element.name}}</mat-card-title>
+              <mat-card-subtitle>{{element.type}}</mat-card-subtitle>
+            </mat-card-header>
 
-              <mat-grid-tile>
-                <img *ngIf="element.img" mat-card-image style="max-width: 400px;" [src]="element.img">
-              </mat-grid-tile>
+            <mat-card-content>
+              <mat-grid-list [cols]="2" rowHeight="1.5:1">
 
-              <mat-grid-tile>
-                <mat-list style="margin-top: -10px;">
-                  <div mat-subheader>Details:</div>
+                <mat-grid-tile>
+                  <img class="mat-grid-tile-img" *ngIf="element.img" [src]="element.img">
+                </mat-grid-tile>
 
-                  <mat-list-item *ngIf="element.producer">
-                    <span class="font-18">Producer</span>:
-                    <br>
-                    <span class="font-light-18">{{element.producer}}</span>
-                  </mat-list-item>
+                <mat-grid-tile>
+                  <mat-list style="margin-top: -10px;">
+                    <div mat-subheader>Details:</div>
 
-                  <mat-list-item *ngIf="element.name">
-                    <span class="font-18">Name</span>:
-                    <br>
-                    <span class="font-light-18">{{element.name}}</span>
-                  </mat-list-item>
+                    <mat-list-item *ngIf="element.producer">
+                      <span class="font-18">Producer</span>:
+                      <br>
+                      <span class="font-light-18">{{element.producer}}</span>
+                    </mat-list-item>
 
-                  <mat-list-item *ngIf="element.parameters">
-                    <span class="font-18">Parameters</span>:
-                    <br>
-                    <span class="font-light-18">{{element.parameters}}</span>
-                  </mat-list-item>
+                    <mat-list-item *ngIf="element.name">
+                      <span class="font-18">Name</span>:
+                      <br>
+                      <span class="font-light-18">{{element.name}}</span>
+                    </mat-list-item>
 
-                  <mat-list-item *ngIf="element.quantity">
-                    <span class="font-18">Quantity</span>:
-                    <br>
-                    <span class="font-light-18">{{element.quantity}}</span>
-                  </mat-list-item>
+                    <mat-list-item *ngIf="element.parameters">
+                      <span class="font-18">Parameters</span>:
+                      <br>
+                      <span class="font-light-18">{{element.parameters}}</span>
+                    </mat-list-item>
 
-                  <mat-list-item *ngIf="element.description">
-                    <span class="font-18">Description</span>:
-                    <br>
-                    <span class="font-light-18">{{element.description}}</span>
-                  </mat-list-item>
+                    <mat-list-item *ngIf="element.quantity">
+                      <span class="font-18">Quantity</span>:
+                      <br>
+                      <span class="font-light-18">{{element.quantity}}</span>
+                    </mat-list-item>
 
-                </mat-list>
+                    <mat-list-item *ngIf="element.description">
+                      <span class="font-18">Description</span>:
+                      <br>
+                      <span class="font-light-18">{{element.description}}</span>
+                    </mat-list-item>
 
-              </mat-grid-tile>
+                  </mat-list>
 
-            </mat-grid-list>
-          </mat-card-content>
+                </mat-grid-tile>
 
-          <mat-card-actions class="card-actions" *ngIf="element.specs || element.shopLink">
-            <a *ngIf="element.specs.length > 1" mat-raised-button color="primary" [href]="element.specs" target="_blank">SPECS</a>
-            <a *ngIf="element.shopLink.length > 1" mat-raised-button color="accent" [href]="element.shopLink" target="_blank">{{element.shopName}}</a>
-          </mat-card-actions>
+              </mat-grid-list>
+            </mat-card-content>
 
-        </mat-card>
-        <!--
+            <mat-card-actions class="card-actions" *ngIf="element.specs || element.shopLink">
+              <a *ngIf="element.specs.length > 1" mat-raised-button color="primary" [href]="element.specs" target="_blank">SPECS</a>
+              <a *ngIf="element.shopLink.length > 1" mat-raised-button color="accent" [href]="element.shopLink" target="_blank">{{element.shopName}}</a>
+            </mat-card-actions>
+
+          </mat-card>
+          <!--
         <div class="example-element-diagram">
           <div class="example-element-position"> {{element.position}} </div>
           <div class="example-element-symbol"> {{element.symbol}} </div>
@@ -115,22 +115,23 @@
           </span>
         </div>
       -->
-      </div>
-    </td>
-  </ng-container>
+        </div>
+      </td>
+    </ng-container>
 
-  <tr mat-header-row *matHeaderRowDef="columnsToDisplay; sticky: true;"></tr>
-  <tr mat-row *matRowDef="let element; columns: columnsToDisplay;" class="example-element-row" [class.example-expanded-row]="expandedElement === element"
-    (click)="expandedElement = expandedElement === element ? null : element">
-  </tr>
-  <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay; sticky: true;"></tr>
+    <tr mat-row *matRowDef="let element; columns: columnsToDisplay;" class="example-element-row" [class.example-expanded-row]="expandedElement === element"
+      (click)="expandedElement = expandedElement === element ? null : element">
+    </tr>
+    <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
 
-  <!-- Row shown when there is no matching data. -->
-  <tr class="mat-row" *matNoDataRow>
-    <td class="mat-cell" colspan="4">No data matching the filter.</td>
-  </tr>
-</table>
+    <!-- Row shown when there is no matching data. -->
+    <tr class="mat-row" *matNoDataRow>
+      <td class="mat-cell" colspan="4">No data matching the filter.</td>
+    </tr>
+  </table>
 
+</div>
 
 <!-- Copyright 2020 Google LLC. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that
