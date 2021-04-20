@@ -1,20 +1,23 @@
-<h1 class="table-header--title">Performance</h1>
+<h1 class="table-header-title">Performance</h1>
 
 <mat-accordion class="example-headers-align">
+  <div *ngFor="let panel of panels">
+    <mat-expansion-panel [disabled]="!panel.enabled">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <img class="mat-panel-img" [src]="panel.icon">
+          {{panel.type}}
+        </mat-panel-title>
+        <mat-panel-description>
+          {{panel.producer}} {{panel.name}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
 
-  <mat-expansion-panel *ngFor="let panel of panels">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        <img class="mat-panel-img" [src]="panel.icon">
-        {{panel.type}}
-      </mat-panel-title>
-      <mat-panel-description>
-        {{panel.producer}} {{panel.name}}
-      </mat-panel-description>
-    </mat-expansion-panel-header>
+      <ngx-image-display [images]="panel.images" [sameSize]="SameSizeConfig" [ImageEffect]="ImageEffect" [displayconfig]="displayconfig">
+      </ngx-image-display>
 
-  </mat-expansion-panel>
-
+    </mat-expansion-panel>
+  </div>
 
 
   <mat-expansion-panel disabled>

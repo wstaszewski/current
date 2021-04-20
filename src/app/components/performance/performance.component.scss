@@ -1,7 +1,8 @@
-.table-heade-title {
+.table-header-title {
   color: black;
   font-size: 20px;
   padding-left: 25px;
+  padding-top: 50px;
   display: flex;
 }
 
@@ -11,6 +12,9 @@
   padding-right: 15px;
 }
 
+.subtext {
+  height: 10%;
+}
 
 .example-action-buttons {
   padding-bottom: 20px;
@@ -28,6 +32,47 @@
 
 .example-headers-align .mat-form-field+.mat-form-field {
   margin-left: 8px;
+}
+
+.container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
+ngx-image-display {
+  width: 100%;
+}
+
+.fullWidth {
+  width: 100%;
+}
+.samesizelabel {
+  color: blue;
+}
+
+.btn {
+  margin:2px;
+}
+
+.green {
+    background-color: green;
+    color: white;
+  }
+
+.top {
+  margin-bottom: 5%;
+}
+
+.bottom {
+  margin-top:7%
+}
+
+.hint {
+  color:darkslategrey;
 }
 
 @media screen and (max-width: 800px) {

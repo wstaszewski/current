@@ -46,8 +46,8 @@
         "position": 4,
         "producer": "G Skill",
         "quantity": "2",
-        "shopLink": "",
-        "shopName": "",
+        "shopLink": "https://www.morele.net/pamiec-g-skill-f3-12800cl8d-4gbeco-307748/",
+        "shopName": "Morele",
         "specs": "https://www.gskill.com/specification/165/177/1532326662/F3-12800CL8D-4GBECO-Specification",
         "type": "Memory - Channel 1"
     },
@@ -59,8 +59,8 @@
         "position": 5,
         "producer": "G Skill",
         "quantity": "2",
-        "shopLink": "",
-        "shopName": "",
+        "shopLink": "https://www.morele.net/pamiec-g-skill-ddr3-4-gb-1600mhz-cl8-f3-12800cl8d-4gbrm-605206/",
+        "shopName": "Morele",
         "specs": "https://www.gskill.com/product/165/183/1532515223/F3-12800CL8D-2GBTDTridentDDR3-1600MHz-CL8-8-8-1.60V2GB-(2x1GB)",
         "type": "Memory - Channel 2"
     },

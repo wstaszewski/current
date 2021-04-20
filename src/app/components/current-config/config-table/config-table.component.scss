@@ -143,6 +143,10 @@ tr.example-element-row:not(.example-expanded-row):active {
     height: 50px;
   }
 
+  .mat-table-sticky {
+    background: none !important;
+  }
+
   .mat-elevation-z8 {
     height: calc(100vh - 180px);
   }

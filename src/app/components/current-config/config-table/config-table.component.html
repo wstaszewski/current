@@ -7,7 +7,7 @@
 
 <div class="mat-elevation-z8">
 
-  <table mat-table [ngClass]="isOpen ? 'hidden' : 'shown'" [dataSource]="dataSource" multiTemplateDataRows #table>
+  <table mat-table [dataSource]="dataSource" multiTemplateDataRows #table>
 
     <ng-container matColumnDef="action">
       <th mat-header-cell *matHeaderCellDef></th>
@@ -119,7 +119,7 @@
       </td>
     </ng-container>
 
-    <tr mat-header-row *matHeaderRowDef="columnsToDisplay; sticky: true;"></tr>
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay; sticky: false;"></tr>
     <tr mat-row *matRowDef="let element; columns: columnsToDisplay;" class="example-element-row" [class.example-expanded-row]="expandedElement === element"
       (click)="expandedElement = expandedElement === element ? null : element">
     </tr>

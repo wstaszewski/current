@@ -1,0 +1,26 @@
+<h1 class="table-header-title">Benchmarks</h1>
+
+<mat-tab-group (window:resize)="onResize($event)">
+
+  <mat-tab label="PassMark - CPU">
+
+    <ng-template matTabContent>
+      <app-benchmark-barchart [barStyle]="orientation" [configuration]="configuration" [configurationType]="'cpu'" [customElement]="'Intel Core i7-2600K @ 4.20 GHz'"
+        [name]="cpuName"></app-benchmark-barchart>
+    </ng-template>
+
+  </mat-tab>
+
+  <mat-tab label="PassMark - GPU">
+
+    <ng-template matTabContent>
+      <app-benchmark-barchart [barStyle]="orientation" [configuration]="configuration" [configurationType]="'gpu'" [customElement]="'GeForce GTX 760 @ XX GHz'" [name]="gpuName">
+      </app-benchmark-barchart>
+    </ng-template>
+  </mat-tab>
+
+  <mat-tab label="GeekBench" disabled>
+
+  </mat-tab>
+
+</mat-tab-group>

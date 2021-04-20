@@ -1,0 +1,42 @@
+[
+  {
+    "name": "GeForce RTX 2070 SUPER",
+    "value": 18116
+  },
+  {
+    "name": "Radeon RX 5700 XT",
+    "value": 16833
+  },
+  {
+    "name": "GeForce GTX 1080",
+    "value": 15020
+  },
+  {
+    "name": "GeForce RTX 2060",
+    "value": 13833
+  },
+  {
+    "name": "GeForce GTX 1070",
+    "value": 13361
+  },
+  {
+    "name": "Radeon RX 580",
+    "value": 8833
+  },
+  {
+    "name": "GeForce GTX 1050 Ti",
+    "value": 6340
+  },
+  {
+    "name": "Radeon HN 7970",
+    "value": 5247
+  },
+  {
+    "name": "GeForce GTX 760",
+    "value": 4773
+  },
+  {
+    "name": "GeForce GTX 760 @ XX GHz",
+    "value": 0
+  }
+]

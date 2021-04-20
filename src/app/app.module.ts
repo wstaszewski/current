@@ -46,9 +46,13 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxImageDisplayModule } from '@creativeacer/ngx-image-display';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
+import { BenchmarkBarChartComponent } from './components/benchmarks/benchmark-barchart/benchmark-barchart.component';
+import { BenchmarksComponent } from './components/benchmarks/benchmarks.component';
 import { InputComponent } from './components/common/input/input.component';
 import { LoadingAnimationComponent } from './components/common/loading-animation/loading-animation.component';
 import { ConfigTableComponent } from './components/current-config/config-table/config-table.component';
@@ -57,6 +61,7 @@ import { HistoryComponent } from './components/history/history.component';
 import { TimelineComponent } from './components/history/timeline/timeline.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PerformanceComponent } from './components/performance/performance.component';
+
 
 @NgModule({
   declarations: [
@@ -70,26 +75,36 @@ import { PerformanceComponent } from './components/performance/performance.compo
     TimelineComponent,
     LoadingAnimationComponent,
     PerformanceComponent,
+    BenchmarksComponent,
+    BenchmarkBarChartComponent,
   ],
   imports: [
-    BrowserModule,
-    MatTableModule,
-    MatInputModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    FlexLayoutModule,
-    MatIconModule,
-    MatListModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatButtonModule,
-    HttpClientModule,
     A11yModule,
+    AppRoutingModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+
+    NgxChartsModule,
+
+    OverlayModule,
+    PortalModule,
+    ScrollingModule,
+    FlexLayoutModule,
+
     ClipboardModule,
     CdkStepperModule,
     CdkTableModule,
     CdkTreeModule,
     DragDropModule,
+
+    MatTableModule,
+    MatInputModule,
+    MatIconModule,
+    MatListModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatButtonModule,
     MatAutocompleteModule,
     MatBadgeModule,
     MatBottomSheetModule,
@@ -118,9 +133,7 @@ import { PerformanceComponent } from './components/performance/performance.compo
     MatTabsModule,
     MatTooltipModule,
     MatTreeModule,
-    OverlayModule,
-    PortalModule,
-    ScrollingModule,
+    NgxImageDisplayModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

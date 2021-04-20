@@ -1,0 +1,15 @@
+<div *ngIf="barStyle == 'horizontal'" style="width: 1200px; height: 600px">
+  <ngx-charts-bar-horizontal [view]="config.view" [scheme]="config.colorScheme" [results]="config.single" [gradient]="config.gradient" [xAxis]="config.showXAxis"
+    [yAxis]="config.showYAxis" [legend]="config.showLegend" [animations]="config.animations" [showXAxisLabel]="config.showXAxisLabel" [showYAxisLabel]="config.showYAxisLabel"
+    [xAxisLabel]="config.xAxisLabel" [yAxisLabel]="config.yAxisLabel" [barPadding]="config.barPadding" [showDataLabel]="config.showDataLabel" [customColors]="config.customColors"
+    (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+  </ngx-charts-bar-horizontal>
+</div>
+
+<div *ngIf="barStyle == 'vertical'">
+  <ngx-charts-bar-vertical [view]="config.view" [scheme]="config.colorScheme" [results]="config.single" [gradient]="config.gradient" [xAxis]="config.showXAxis"
+    [yAxis]="config.showYAxis" [legend]="config.showLegend" [animations]="config.animations" [showXAxisLabel]="config.showXAxisLabel" [showYAxisLabel]="config.showYAxisLabel"
+    [xAxisLabel]="config.xAxisLabel" [yAxisLabel]="config.yAxisLabel" [barPadding]="config.barPadding" [showDataLabel]="config.showDataLabel" [customColors]="config.customColors"
+    (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+  </ngx-charts-bar-vertical>
+</div>

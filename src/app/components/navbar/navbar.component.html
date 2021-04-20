@@ -11,15 +11,21 @@
   </div>
   <ul class="nav-links" #navLinks>
     <li>
-      <a routerLink="/current" routerLinkActive="active-link" mat-button>
+      <a routerLink="/current" routerLinkActive="active-link" (click)="onHambugerClick()" mat-button>
         <mat-icon>table_view</mat-icon>
         Current
       </a>
     </li>
     <li>
-      <a routerLink="/performance" routerLinkActive="active-link" mat-button>
+      <a routerLink="/performance" routerLinkActive="active-link" (click)="onHambugerClick()" mat-button>
         <mat-icon>assessment</mat-icon>
         Performance
+      </a>
+    </li>
+    <li>
+      <a routerLink="/benchmarks" routerLinkActive="active-link" (click)="onHambugerClick()" mat-button>
+        <mat-icon>leaderboard</mat-icon>
+        Benchmarks
       </a>
     </li>
     <li>
