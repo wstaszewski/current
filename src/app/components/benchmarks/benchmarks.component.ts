@@ -19,7 +19,7 @@ export class BenchmarksComponent implements OnInit {
   constructor(private readonly dataService: DataService, private readonly navService: NavService) { }
 
   ngOnInit(): void {
-    this.orientation = (window.innerWidth < 800) ? "vertical" : "horizontal";
+    this.orientation = (window.innerWidth < 1024) ? "vertical" : "horizontal";
 
 
     this.navService.change.subscribe(isOpen => {
@@ -36,7 +36,7 @@ export class BenchmarksComponent implements OnInit {
   }
 
   onResize(event) {
-    this.orientation = (event.target.innerWidth < 800) ? "vertical" : "horizontal";
+    this.orientation = (event.target.innerWidth < 1024) ? "vertical" : "horizontal";
   }
 
 }

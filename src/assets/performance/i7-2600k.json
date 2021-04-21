@@ -34,30 +34,6 @@
         "type": "Memory - Overall"
     },
     {
-        "icon": "assets/icons/ram.svg",
-        "images": [
-            {
-                "imageData": {
-                    "value": "assets/performance/i7-2600k/aida-cachemem.png"
-                },
-                "type": "url"
-            }
-        ],
-        "name": "ECO F3-12800CL8-4GB",
-        "parameters": "4GB DDR3-1333",
-        "position": 3,
-        "producer": "G Skill",
-        "type": "Memory - Channel 1"
-    },
-    {
-        "icon": "assets/icons/ram.svg",
-        "name": "Ripjaws F3-12800CL8-2GBRM",
-        "parameters": "2GB DDR3-1333",
-        "position": 4,
-        "producer": "G Skill",
-        "type": "Memory - Channel 2"
-    },
-    {
         "enabled": "true",
         "icon": "assets/icons/gpu.svg",
         "images": [
@@ -121,7 +97,6 @@
         "type": "Hard drive"
     },
     {
-        "enabled": "true",
         "icon": "assets/icons/hard-disk.svg",
         "name": "HD154UI 1.5 TB",
         "parameters": "3.5\" 5400 RPM",
@@ -130,7 +105,6 @@
         "type": "Hard drive"
     },
     {
-        "enabled": "true",
         "icon": "assets/icons/hard-disk.svg",
         "name": "BarraCuda 500 GB ST3500320AS",
         "parameters": "3.5\" 7200 RPM",
@@ -154,5 +128,29 @@
         "position": 10,
         "producer": "UPC",
         "type": "Internet"
-    }
+    },
+    {
+      "icon": "assets/icons/ram.svg",
+      "images": [
+          {
+              "imageData": {
+                  "value": "assets/performance/i7-2600k/aida-cachemem.png"
+              },
+              "type": "url"
+          }
+      ],
+      "name": "ECO F3-12800CL8-4GB",
+      "parameters": "4GB DDR3-1333",
+      "position": 3,
+      "producer": "G Skill",
+      "type": "Memory - Channel 1"
+  },
+  {
+      "icon": "assets/icons/ram.svg",
+      "name": "Ripjaws F3-12800CL8-2GBRM",
+      "parameters": "2GB DDR3-1333",
+      "position": 4,
+      "producer": "G Skill",
+      "type": "Memory - Channel 2"
+  }
 ]

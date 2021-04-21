@@ -50,32 +50,33 @@ ngx-image-display {
 .fullWidth {
   width: 100%;
 }
+
 .samesizelabel {
   color: blue;
 }
 
 .btn {
-  margin:2px;
+  margin: 2px;
 }
 
 .green {
-    background-color: green;
-    color: white;
-  }
+  background-color: green;
+  color: white;
+}
 
 .top {
   margin-bottom: 5%;
 }
 
 .bottom {
-  margin-top:7%
+  margin-top: 7%
 }
 
 .hint {
-  color:darkslategrey;
+  color: darkslategrey;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .table-header-title {
     padding-top: 40px;
 

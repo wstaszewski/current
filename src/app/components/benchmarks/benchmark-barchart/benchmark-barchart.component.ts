@@ -19,7 +19,7 @@ export class BenchmarkBarChartComponent implements OnInit {
   ngOnInit(): void {
 
     this.config = {
-      view: undefined,
+      view: [window.innerWidth / 1.35, window.innerHeight / 1.35],
       single: [],
       // options
       animations: true,
@@ -48,6 +48,10 @@ export class BenchmarkBarChartComponent implements OnInit {
       .subscribe(config => {
         this.config.single = config as any[];
       });
+  }
+
+  onResize(event) {
+    this.config.view = [event.target.innerWidth / 1.35, event.target.innerHeight / 1.35];
   }
 
   onSelect(data): void {
