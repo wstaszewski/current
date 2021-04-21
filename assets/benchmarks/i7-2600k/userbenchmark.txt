@@ -1,0 +1,17 @@
+pc status
+Overall this PC is performing as expected (48th percentile). This means that out of 100 PCs with exactly the same components, 52 performed better. The overall PC percentile is the average of each of its individual components.
+
+processor
+With a good single core score, this CPU can easily handle the majority of general computing tasks. Additionally this processor can handle very light workstation, and even some very light server workloads. Finally, with a gaming score of 75.5%, this CPU's suitability for 3D gaming is good.
+
+gpu
+With a good single core score, this CPU can easily handle the majority of general computing tasks. Additionally this processor can handle very light workstation, and even some very light server workloads. Finally, with a gaming score of 75.5%, this CPU's suitability for 3D gaming is good.
+
+boot drive
+With a good single core score, this CPU can easily handle the majority of general computing tasks. Additionally this processor can handle very light workstation, and even some very light server workloads. Finally, with a gaming score of 75.5%, this CPU's suitability for 3D gaming is good.
+
+mem
+12GB is enough RAM to run any version of Windows and it's more than sufficient for nearly all games. 12GB also allows for very large file and system caches, software development and batch photo editing/processing.
+
+os
+Windows 10 is the most recent version of Windows, and the best to date in our opinion.

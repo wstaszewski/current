@@ -1,42 +1,42 @@
 [
   {
     "name": "AMD Ryzen 9 3900X",
-    "value": 32905
+    "value": 18682
   },
   {
     "name": "AMD Ryzen 7 3700X",
-    "value": 22805
+    "value": 12195
   },
   {
     "name": "Intel Core i7-10700K",
-    "value": 19502
+    "value": 13302
   },
   {
     "name": "Intel Core i9-9900K",
-    "value": 18863
+    "value": 12470
   },
   {
     "name": "AMD Ryzen 5 3600",
-    "value": 17863
+    "value": 9073
   },
   {
     "name": "Intel Core i7-9700K",
-    "value": 14548
+    "value": 9428
   },
   {
     "name": "Intel Core i7-8700K",
-    "value": 13905
+    "value": 8960
   },
   {
     "name": "Intel Core i7-3770",
-    "value": 6368
-  },
-  {
-    "name": "Intel Core i7-2600K @ 4.20 GHz",
-    "value": 5533
+    "value": 3650
   },
   {
     "name": "Intel Core i7-2600K",
-    "value": 5472
+    "value": 3647
+  },
+  {
+    "name": "Intel Core i7-2600K @ 4.20 GHz",
+    "value": 3054
   }
 ]
