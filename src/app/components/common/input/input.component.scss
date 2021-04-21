@@ -1,3 +1,5 @@
+@import '/src/app/styles/variables.scss';
+
 .input-container {
   position: relative;
 }
@@ -35,7 +37,7 @@ label {
 /* Interation */
 input:valid,
 input:focus {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid $blue;
 }
 
 input:valid+label,
