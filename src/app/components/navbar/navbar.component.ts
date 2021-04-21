@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit {
   @ViewChild('navLinks') navLinks: ElementRef<HTMLInputElement>;
 
   wasHamburgerClicked: boolean = false;
-  image: string = 'assets/logo/WS-red.png';
+  image: string = 'assets/logo/WS.png';
 
   constructor(private readonly navService: NavService) { }
 
@@ -36,6 +36,20 @@ export class NavbarComponent implements OnInit {
     }
 
     this.hamburger.nativeElement.classList.toggle("toggle");
+  }
+
+  onNavigation() {
+    this.navService.off();
+
+    //this.wasHamburgerClicked = !this.wasHamburgerClicked;
+    this.navLinks.nativeElement.classList.toggle("open");
+
+    for (let item of Array.from(this.navLinks.nativeElement.children)) {
+      item.classList.toggle("fade");
+    }
+
+    this.hamburger.nativeElement.classList.toggle("toggle");
+
   }
 
 }

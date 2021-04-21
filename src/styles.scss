@@ -12,6 +12,10 @@ A foreground palette: colors for text and icons.
 A background palette: colors used for element backgrounds.
 */
 
+.mat-drawer-container{
+  z-index: 999;
+}
+
 .mat-sidenav-container,
 .mat-sidenav-content,
 .mat-tab-body-content {

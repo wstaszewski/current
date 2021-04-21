@@ -27,6 +27,8 @@ $secondary: mat-palette($mat-amber, A200, A100, A400);
 $ternary: black;
 $dark: #444444;
 
+$blue: #2C73D2;
+
 
 // fonts
 
@@ -75,7 +77,7 @@ $dark: #444444;
   font-size: 18px;
   font-style: italic;
   text-align: center;
-  color: $dih-grey-3;
+  color: grey;
   display: inline-block;
   width: 100%;
 }
@@ -107,5 +109,5 @@ $dark: #444444;
 
 @mixin font-notification {
   @include font-light-16;
-  color: $dih-orange;
+  color: orange;
 }

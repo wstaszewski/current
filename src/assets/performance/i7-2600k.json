@@ -1,31 +1,5 @@
 [
     {
-        "icon": "",
-        "images": [
-            {
-                "imageData": {
-                    "subtext": "Just some overlay",
-                    "subtextOverlay": "full",
-                    "value": "assets/performance/i7-2600k/860-atto.PNG"
-                },
-                "type": "url"
-            },
-            {
-                "imageData": {
-                    "subtext": "Just some overlay",
-                    "subtextOverlay": "full",
-                    "value": "assets/performance/i7-2600k/860-atto.PNG"
-                },
-                "type": "url"
-            }
-        ],
-        "name": "P8P67 Deluxe",
-        "parameters": "",
-        "position": 1,
-        "producer": "Asus",
-        "type": "Motherboard"
-    },
-    {
         "enabled": "true",
         "icon": "assets/icons/cpu.svg",
         "images": [

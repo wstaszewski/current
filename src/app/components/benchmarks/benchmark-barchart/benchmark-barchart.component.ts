@@ -34,12 +34,12 @@ export class BenchmarkBarChartComponent implements OnInit {
       showDataLabel: true,
       barPadding: 10,
       colorScheme: {
-        domain: ['#5AA454']
+        domain: ['#808080']
       },
       customColors: [
         {
           name: this.customElement,
-          value: '#0000ff'
+          value: '#2C73D2'
         }
       ]
     }

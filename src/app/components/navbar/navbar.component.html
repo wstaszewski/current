@@ -11,28 +11,22 @@
   </div>
   <ul class="nav-links" #navLinks>
     <li>
-      <a routerLink="/current" routerLinkActive="active-link" (click)="onHambugerClick()" mat-button>
+      <a class="hover-2" routerLink="/current" routerLinkActive="active-link" (click)="onNavigation()" mat-button>
         <mat-icon>table_view</mat-icon>
         Current
       </a>
     </li>
     <li>
-      <a routerLink="/performance" routerLinkActive="active-link" (click)="onHambugerClick()" mat-button>
+      <a class="hover-2" routerLink="/performance" routerLinkActive="active-link" (click)="onNavigation()" mat-button>
         <mat-icon>insights</mat-icon>
         Performance
       </a>
     </li>
     <li>
-      <a class="disabled" style="color: grey;" mat-button>
-        <mat-icon style="color: grey;">leaderboard</mat-icon>
-        Benchmarks
-      </a>
-      <!--
-      <a routerLink="/benchmarks" routerLinkActive="active-link" (click)="onHambugerClick()" mat-button>
+      <a class="hover-2" routerLink="/benchmarks" routerLinkActive="active-link" (click)="onNavigation()" mat-button>
         <mat-icon>leaderboard</mat-icon>
         Benchmarks
       </a>
-    -->
     </li>
     <li>
       <a class="disabled" style="color: grey;" mat-button>

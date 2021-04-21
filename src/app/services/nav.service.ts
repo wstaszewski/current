@@ -12,6 +12,11 @@ import { EventEmitter, Injectable, Output } from '@angular/core';
     this.isOpen = !this.isOpen;
     this.change.emit(this.isOpen);
   }
+
+  off() {
+    this.isOpen = false
+    this.change.emit(this.isOpen);
+  }
 }
 
 
