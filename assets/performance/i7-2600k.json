@@ -1,182 +1,201 @@
-[{
-    "enabled": "true",
-    "icon": "assets/icons/cpu.svg",
-    "images": [{
-      "imageData": {
-        "value": "assets/performance/i7-2600k/cpu-z.PNG"
-      },
-      "type": "url"
-    }],
-    "name": "i7-2600K",
-    "parameters": "OC @ 4400 MHz",
-    "position": 2,
-    "producer": "Intel",
-    "type": "Processor"
-  },
-  {
-    "enabled": "true",
-    "icon": "assets/icons/ram.svg",
-    "images": [{
-      "imageData": {
-        "value": "assets/performance/i7-2600k/aida-cachemem.png"
-      },
-      "type": "url"
-    }],
-    "name": "F3-12800CL8-4GB + F3-12800CL8-2GBRM",
-    "parameters": "12GB DDR3-1333",
-    "position": 3,
-    "producer": "",
-    "type": "Memory - Overall"
-  },
-  {
-    "enabled": "true",
-    "icon": "assets/icons/gpu.svg",
-    "images": [{
-        "imageData": {
-          "value": "assets/performance/i7-2600k/gpu-z.PNG"
-        },
-        "type": "url"
-      },
-      {
-        "imageData": {
-          "value": "assets/performance/i7-2600k/aida-gpgpu.png"
-        },
-        "type": "url"
-      }
-    ],
-    "name": "GeForce GTX 760",
-    "parameters": "2 GB DDR5",
-    "position": 10,
-    "producer": "Nvidia",
-    "type": "Graphics Card"
-  },
-  {
-    "enabled": "true",
-    "icon": "assets/icons/hard-disk.svg",
-    "images": [{
-        "imageData": {
-          "value": "assets/performance/i7-2600k/860-atto.PNG"
-        },
-        "type": "url"
-      },
-      {
-        "imageData": {
-          "value": "assets/performance/i7-2600k/860-atto-io.PNG"
-        },
-        "type": "url"
-      },
-      {
-        "imageData": {
-          "value": "assets/performance/i7-2600k/860-crystal.PNG"
-        },
-        "type": "url"
-      }
-    ],
-    "name": "SSD 860 EVO 500GB",
-    "parameters": "",
-    "position": 5,
-    "producer": "Samsung",
-    "type": "Hard drive"
-  },
-  {
-    "enabled": "true",
-    "icon": "assets/icons/hard-disk.svg",
-    "images": [{
-        "imageData": {
-          "value": "assets/performance/i7-2600k/barracuda2-atto.PNG"
-        },
-        "type": "url"
-      },
-      {
-        "imageData": {
-          "value": "assets/performance/i7-2600k/barracuda2-atto-io.PNG"
-        },
-        "type": "url"
-      },
-      {
-        "imageData": {
-          "value": "assets/performance/i7-2600k/barracuda2-crystal.PNG"
-        },
-        "type": "url"
-      }
-    ],
-    "name": "BarraCuda 2 TB ST2000DL003-9VT166",
-    "parameters": "3.5\" 5400 RPM",
-    "position": 6,
-    "producer": "Seagate",
-    "type": "Hard drive"
-  },
-  {
-    "enabled": "true",
-    "icon": "assets/icons/hard-disk.svg",
-    "name": "HD154UI 1.5 TB",
-    "parameters": "3.5\" 5400 RPM",
-    "position": 7,
-    "producer": "Samsung",
-    "images": [
-      {
-        "imageData": {
-          "value": "assets/performance/i7-2600k/HD154UI-atto.PNG"
-        },
-        "type": "url"
-      },
-      {
-        "imageData": {
-          "value": "assets/performance/i7-2600k/HD154UI-atto-io.PNG"
-        },
-        "type": "url"
-      },
-      {
-        "imageData": {
-          "value": "assets/performance/i7-2600k/HD154UI-crystal.PNG"
-        },
-        "type": "url"
-      }],
-    "type": "Hard drive"
-  },
-  {
-    "enabled": "true",
-    "icon": "assets/icons/internet.svg",
-    "images": [{
-      "imageData": {
-        "value": "assets/performance/i7-2600k/UPC-speed.PNG"
-      },
-      "type": "url"
-    }],
-    "name": "Internet",
-    "parameters": "",
-    "position": 10,
-    "producer": "UPC",
-    "type": "Internet"
-  },
-  {
-    "icon": "assets/icons/hard-disk.svg",
-    "name": "BarraCuda 500 GB ST3500320AS",
-    "parameters": "3.5\" 7200 RPM",
-    "position": 8,
-    "producer": "Seagate",
-    "type": "Hard drive"
-  },
-  {
-    "icon": "assets/icons/ram.svg",
-    "images": [{
-      "imageData": {
-        "value": "assets/performance/i7-2600k/aida-cachemem.png"
-      },
-      "type": "url"
-    }],
-    "name": "ECO F3-12800CL8-4GB",
-    "parameters": "4GB DDR3-1333",
-    "position": 3,
-    "producer": "G Skill",
-    "type": "Memory - Channel 1"
-  },
-  {
-    "icon": "assets/icons/ram.svg",
-    "name": "Ripjaws F3-12800CL8-2GBRM",
-    "parameters": "2GB DDR3-1333",
-    "position": 4,
-    "producer": "G Skill",
-    "type": "Memory - Channel 2"
-  }
+[
+    {
+        "enabled": "true",
+        "icon": "assets/icons/cpu.svg",
+        "images": [
+            {
+                "imageData": {
+                    "value": "assets/performance/i7-2600k/cpu-z.PNG"
+                },
+                "type": "url"
+            },
+            {
+                "imageData": {
+                    "value": "assets/performance/i7-2600k/aida-cpuid.png"
+                },
+                "type": "url"
+            }
+        ],
+        "name": "i7-2600K",
+        "parameters": "OC @ 4400 MHz",
+        "position": 2,
+        "producer": "Intel",
+        "type": "Processor"
+    },
+    {
+        "enabled": "true",
+        "icon": "assets/icons/ram.svg",
+        "images": [
+            {
+                "imageData": {
+                    "value": "assets/performance/i7-2600k/aida-cachemem.png"
+                },
+                "type": "url"
+            }
+        ],
+        "name": "F3-12800CL8-4GB + F3-12800CL8-2GBRM",
+        "parameters": "12GB DDR3-1333",
+        "position": 3,
+        "producer": "",
+        "type": "Memory - Overall"
+    },
+    {
+        "enabled": "true",
+        "icon": "assets/icons/gpu.svg",
+        "images": [
+            {
+                "imageData": {
+                    "value": "assets/performance/i7-2600k/gpu-z.PNG"
+                },
+                "type": "url"
+            },
+            {
+                "imageData": {
+                    "value": "assets/performance/i7-2600k/aida-gpgpu.png"
+                },
+                "type": "url"
+            }
+        ],
+        "name": "GeForce GTX 760",
+        "parameters": "2 GB DDR5",
+        "position": 10,
+        "producer": "Nvidia",
+        "type": "Graphics Card"
+    },
+    {
+        "enabled": "true",
+        "icon": "assets/icons/hard-disk.svg",
+        "images": [
+            {
+                "imageData": {
+                    "value": "assets/performance/i7-2600k/860-atto.PNG"
+                },
+                "type": "url"
+            },
+            {
+                "imageData": {
+                    "value": "assets/performance/i7-2600k/860-atto-io.PNG"
+                },
+                "type": "url"
+            },
+            {
+                "imageData": {
+                    "value": "assets/performance/i7-2600k/860-crystal.PNG"
+                },
+                "type": "url"
+            }
+        ],
+        "name": "SSD 860 EVO 500GB",
+        "parameters": "",
+        "position": 5,
+        "producer": "Samsung",
+        "type": "Hard drive"
+    },
+    {
+        "enabled": "true",
+        "icon": "assets/icons/hard-disk.svg",
+        "images": [
+            {
+                "imageData": {
+                    "value": "assets/performance/i7-2600k/barracuda2-atto.PNG"
+                },
+                "type": "url"
+            },
+            {
+                "imageData": {
+                    "value": "assets/performance/i7-2600k/barracuda2-atto-io.PNG"
+                },
+                "type": "url"
+            },
+            {
+                "imageData": {
+                    "value": "assets/performance/i7-2600k/barracuda2-crystal.PNG"
+                },
+                "type": "url"
+            }
+        ],
+        "name": "BarraCuda 2 TB ST2000DL003-9VT166",
+        "parameters": "3.5\" 5400 RPM",
+        "position": 6,
+        "producer": "Seagate",
+        "type": "Hard drive"
+    },
+    {
+        "enabled": "true",
+        "icon": "assets/icons/hard-disk.svg",
+        "images": [
+            {
+                "imageData": {
+                    "value": "assets/performance/i7-2600k/HD154UI-atto.PNG"
+                },
+                "type": "url"
+            },
+            {
+                "imageData": {
+                    "value": "assets/performance/i7-2600k/HD154UI-atto-io.PNG"
+                },
+                "type": "url"
+            },
+            {
+                "imageData": {
+                    "value": "assets/performance/i7-2600k/HD154UI-crystal.PNG"
+                },
+                "type": "url"
+            }
+        ],
+        "name": "HD154UI 1.5 TB",
+        "parameters": "3.5\" 5400 RPM",
+        "position": 7,
+        "producer": "Samsung",
+        "type": "Hard drive"
+    },
+    {
+        "enabled": "true",
+        "icon": "assets/icons/internet.svg",
+        "images": [
+            {
+                "imageData": {
+                    "value": "assets/performance/i7-2600k/UPC-speed.PNG"
+                },
+                "type": "url"
+            }
+        ],
+        "name": "Internet",
+        "parameters": "",
+        "position": 10,
+        "producer": "UPC",
+        "type": "Internet"
+    },
+    {
+        "icon": "assets/icons/hard-disk.svg",
+        "name": "BarraCuda 500 GB ST3500320AS",
+        "parameters": "3.5\" 7200 RPM",
+        "position": 8,
+        "producer": "Seagate",
+        "type": "Hard drive"
+    },
+    {
+        "icon": "assets/icons/ram.svg",
+        "images": [
+            {
+                "imageData": {
+                    "value": "assets/performance/i7-2600k/aida-cachemem.png"
+                },
+                "type": "url"
+            }
+        ],
+        "name": "ECO F3-12800CL8-4GB",
+        "parameters": "4GB DDR3-1333",
+        "position": 3,
+        "producer": "G Skill",
+        "type": "Memory - Channel 1"
+    },
+    {
+        "icon": "assets/icons/ram.svg",
+        "name": "Ripjaws F3-12800CL8-2GBRM",
+        "parameters": "2GB DDR3-1333",
+        "position": 4,
+        "producer": "G Skill",
+        "type": "Memory - Channel 2"
+    }
 ]
