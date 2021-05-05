@@ -1,9 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "defaultProject": "current",
+  "defaultProject": "pc",
   "newProjectRoot": "projects",
   "projects": {
-    "current": {
+    "pc": {
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -60,18 +60,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "configurations": {
             "production": {
-              "devServerTarget": "current:serve:production"
+              "devServerTarget": "pc:serve:production"
             }
           },
           "options": {
-            "devServerTarget": "current:serve",
+            "devServerTarget": "pc:serve",
             "protractorConfig": "e2e/protractor.conf.js"
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "current:build"
+            "browserTarget": "pc:build"
           }
         },
         "lint": {
@@ -91,11 +91,11 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "current:build:production"
+              "browserTarget": "pc:build:production"
             }
           },
           "options": {
-            "browserTarget": "current:build"
+            "browserTarget": "pc:build"
           }
         },
         "test": {

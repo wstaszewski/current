@@ -1,5 +1,5 @@
 {
-  "name": "current",
+  "name": "pc",
   "version": "11.2.5",
   "scripts": {
     "ng": "ng",
@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-deploy-gh": "ng build --prod --base-href https://wstaszewski.github.io/current/ && npx angular-cli-ghpages — dir=dist"
+    "build-deploy-gh": "ng build --prod --base-href https://wstaszewski.github.io/pc/ && npx angular-cli-ghpages — dir=dist"
   },
   "author": {
     "name": "wstaszewski"
