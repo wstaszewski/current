@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, NavigationStart, Router } from '@angular/router';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -8,12 +9,15 @@ import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   title = 'My PC Configuration';
+  versionInfo: string = environment.version;
+
   isLoaded: boolean = false;
   ishttpLoaded: boolean = false;
 
   constructor(private route: Router) { }
 
   ngOnInit() {
+
     setTimeout(() => {
       console.log('a');
     },

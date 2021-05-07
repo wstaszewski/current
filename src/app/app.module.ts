@@ -59,9 +59,9 @@ import { ConfigTableComponent } from './components/current-config/config-table/c
 import { CurrentConfigComponent } from './components/current-config/current-config.component';
 import { HistoryComponent } from './components/history/history.component';
 import { TimelineComponent } from './components/history/timeline/timeline.component';
+import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PerformanceComponent } from './components/performance/performance.component';
-
 
 @NgModule({
   declarations: [
@@ -77,6 +77,7 @@ import { PerformanceComponent } from './components/performance/performance.compo
     PerformanceComponent,
     BenchmarksComponent,
     BenchmarkBarChartComponent,
+    HomeComponent,
   ],
   imports: [
     A11yModule,
@@ -134,6 +135,7 @@ import { PerformanceComponent } from './components/performance/performance.compo
     MatTooltipModule,
     MatTreeModule,
     NgxImageDisplayModule.forRoot()
+
   ],
   providers: [],
   bootstrap: [AppComponent]

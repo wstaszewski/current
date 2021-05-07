@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit {
   @ViewChild('navLinks') navLinks: ElementRef<HTMLInputElement>;
 
   wasHamburgerClicked: boolean = false;
-  image: string = 'assets/logo/WS.png';
+  image: string = 'assets/logo/pc3.png';
 
   constructor(private readonly navService: NavService) { }
 

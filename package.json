@@ -1,6 +1,6 @@
 {
   "name": "pc",
-  "version": "11.2.5",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4200",
@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-deploy-gh": "ng build --prod --base-href https://wstaszewski.github.io/pc/ && npx angular-cli-ghpages — dir=dist"
+    "build-deploy-gh": "npm version patch && ng build --prod --base-href https://wstaszewski.github.io/pc/ && npx angular-cli-ghpages — dir=dist"
   },
   "author": {
     "name": "wstaszewski"
@@ -29,11 +29,13 @@
     "@angular/platform-browser-dynamic": "11.2.5",
     "@angular/router": "11.2.5",
     "@creativeacer/ngx-image-display": "^1.0.11",
+    "@fullpage/angular-fullpage": "0.0.15",
     "@swimlane/ngx-charts": "^17.0.1",
     "angular-in-memory-web-api": "^0.11.0",
     "font-awesome": "^4.7.0",
     "hammerjs": "^2.0.8",
     "moment": "^2.29.1",
+    "ngx-fullpage": "^5.1.0",
     "rxjs": "6.6.6",
     "tslib": "2.1.0",
     "zone.js": "0.11.4"
@@ -43,7 +45,7 @@
     "@angular/cli": "11.2.4",
     "@angular/compiler-cli": "11.2.5",
     "@types/jasmine": "3.6.6",
-    "@types/node": "14.14.34",
+    "@types/node": "^14.14.34",
     "angular-cli-ghpages": "^1.0.0-rc.1",
     "codelyzer": "6.0.1",
     "jasmine-core": "3.6.0",
