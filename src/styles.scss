@@ -4,7 +4,6 @@
 //@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
 //@import "~@angular/material/prebuilt-themes/purple-green.css";
 
-
 /*
 A primary palette: colors most widely used across all screens and components.
 An accent palette: colors used for the floating action button and interactive elements.
@@ -14,17 +13,15 @@ A background palette: colors used for element backgrounds.
 */
 
 body {
-  background: #2A2A2A;
-  color: white;
+  //background: #2A2A2A;
+  //color: white;
+
+  background: white;
+  color: black;
+
   height: 98vh;
   width: 100%;
   overflow-x: hidden;
-}
-
-.version-info {
-  position: absolute;
-  right: 10px;
-  bottom: 5px;
 }
 
 .mat-drawer-container {

@@ -55,6 +55,7 @@ import { BenchmarkBarChartComponent } from './components/benchmarks/benchmark-ba
 import { BenchmarksComponent } from './components/benchmarks/benchmarks.component';
 import { InputComponent } from './components/common/input/input.component';
 import { LoadingAnimationComponent } from './components/common/loading-animation/loading-animation.component';
+import { ConfigCardComponent } from './components/current-config/config-card/config-card.component';
 import { ConfigTableComponent } from './components/current-config/config-table/config-table.component';
 import { CurrentConfigComponent } from './components/current-config/current-config.component';
 import { HistoryComponent } from './components/history/history.component';
@@ -62,6 +63,7 @@ import { TimelineComponent } from './components/history/timeline/timeline.compon
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PerformanceComponent } from './components/performance/performance.component';
+import { IntersectionObserverDirective } from './directives/observe-visibility.directive';
 
 @NgModule({
   declarations: [
@@ -78,6 +80,8 @@ import { PerformanceComponent } from './components/performance/performance.compo
     BenchmarksComponent,
     BenchmarkBarChartComponent,
     HomeComponent,
+    IntersectionObserverDirective,
+    ConfigCardComponent
   ],
   imports: [
     A11yModule,

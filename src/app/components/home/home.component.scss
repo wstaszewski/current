@@ -1,18 +1,41 @@
 .container {
 
-  display: flex;
+  display: grid;
+  grid-template-columns: 35% 65%;
   left: 0px;
+  top: 110px;
   align-items: center;
+
+
+  .left {
+    margin-top: 110px;
+  }
 }
 
-svg {
+.svg {
   position: absolute;
-  left: 25vw;
+  margin-left: 50px;
   top: 110px;
   z-index: 0;
-  width: 50%;
+  width: 60%;
   stroke: rgba(112, 112, 112, 0.2) !important;
 
+}
+
+.PSU,
+.GPU,
+.AIO,
+.HDD {
+  stroke: rgba(112, 112, 112, 0.2) !important;
+  transition: all 500ms ease-in-out;
+}
+
+.PSU:hover,
+.GPU:hover,
+.AIO:hover,
+.HDD:hover {
+  stroke: rgba(112, 112, 112, 0.7) !important;
+  transition: all 500ms ease-in-out;
 }
 
 /*
@@ -124,3 +147,14 @@ svg {
     transform: rotate(0deg);
   }
 }
+
+
+.version-info {
+  position: absolute;
+  color: black;
+  font-family: 'Roboto-Regular';
+  right: 10px;
+  bottom: 5px;
+}
+
+/*sadasdsadasda*/

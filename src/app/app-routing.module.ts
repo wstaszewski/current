@@ -8,8 +8,8 @@ import { HomeComponent } from './components/home/home.component';
 import { PerformanceComponent } from './components/performance/performance.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/current', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
+  //{ path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: '', component: HomeComponent },
   { path: 'current', component: CurrentConfigComponent },
   { path: 'performance', component: PerformanceComponent },
   { path: 'benchmarks', component: BenchmarksComponent },

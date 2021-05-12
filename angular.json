@@ -40,10 +40,14 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/assets/logo/",
+              "src/assets/",
+              "src/assets/benchmarks/",
+              "src/assets/configurations/",
               "src/assets/icons/",
-              "src/assets/configurations/"
+              "src/assets/images/",
+              "src/assets/logo/",
+              "src/assets/performance/",
+              "src/assets/svg/"
             ],
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -103,10 +107,14 @@
           "options": {
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/assets/logo/*",
-              "src/assets/icons/*",
-              "src/assets/configurations/*"
+              "src/assets/",
+              "src/assets/benchmarks/",
+              "src/assets/configurations/",
+              "src/assets/icons/",
+              "src/assets/images/",
+              "src/assets/logo/",
+              "src/assets/performance/",
+              "src/assets/svg/"
             ],
             "karmaConfig": "karma.conf.js",
             "main": "src/test.ts",

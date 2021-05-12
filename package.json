@@ -1,6 +1,6 @@
 {
   "name": "pc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4200",
@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-deploy-gh": "npm version patch && ng build --prod --base-href https://wstaszewski.github.io/pc/ && npx angular-cli-ghpages — dir=dist"
+    "build-deploy-gh": "ng build --prod --base-href https://wstaszewski.github.io/pc/ && npx angular-cli-ghpages — dir=dist"
   },
   "author": {
     "name": "wstaszewski"
@@ -29,7 +29,6 @@
     "@angular/platform-browser-dynamic": "11.2.5",
     "@angular/router": "11.2.5",
     "@creativeacer/ngx-image-display": "^1.0.11",
-    "@fullpage/angular-fullpage": "0.0.15",
     "@swimlane/ngx-charts": "^17.0.1",
     "angular-in-memory-web-api": "^0.11.0",
     "font-awesome": "^4.7.0",
