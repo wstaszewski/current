@@ -34,7 +34,7 @@ export class PerformanceComponent implements OnInit {
     this.samesizeoption = true;
 
     this.displayconfig = {
-      imageminwidth: '150px',
+      imageminwidth: '250px',
       //containerwidth: '60%',
       containerheight: 'auto',
       fullScreenView: true // Set to false to hide the top right full screen option

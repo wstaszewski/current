@@ -1,7 +1,7 @@
 .container {
 
   display: grid;
-  grid-template-columns: 35% 65%;
+  grid-template-columns: auto 50% auto;
   left: 0px;
   top: 110px;
   align-items: center;
@@ -14,11 +14,11 @@
 
 .svg {
   position: absolute;
-  margin-left: 50px;
-  top: 110px;
+  top: 150px;
   z-index: 0;
   width: 60%;
-  stroke: rgba(112, 112, 112, 0.2) !important;
+  // stroke: rgba(112, 112, 112, 0.2) !important;
+  stroke: rgba(0, 0, 0, 0.1) !important;
 
 }
 
@@ -26,7 +26,8 @@
 .GPU,
 .AIO,
 .HDD {
-  stroke: rgba(112, 112, 112, 0.2) !important;
+  // stroke: rgba(112, 112, 112, 0.2) !important;
+  stroke: rgba(0, 0, 0, 0.1) !important;
   transition: all 500ms ease-in-out;
 }
 
@@ -34,7 +35,8 @@
 .GPU:hover,
 .AIO:hover,
 .HDD:hover {
-  stroke: rgba(112, 112, 112, 0.7) !important;
+  // stroke: rgba(112, 112, 112, 0.7) !important;
+  stroke: rgba(0, 0, 0, 0.5) !important;
   transition: all 500ms ease-in-out;
 }
 

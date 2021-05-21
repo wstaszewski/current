@@ -4,12 +4,11 @@ import { AboutComponent } from './components/about/about.component';
 import { BenchmarksComponent } from './components/benchmarks/benchmarks.component';
 import { CurrentConfigComponent } from './components/current-config/current-config.component';
 import { HistoryComponent } from './components/history/history.component';
-import { HomeComponent } from './components/home/home.component';
 import { PerformanceComponent } from './components/performance/performance.component';
 
 const routes: Routes = [
-  //{ path: '', redirectTo: '/', pathMatch: 'full' },
-  { path: '', component: HomeComponent },
+  { path: '', redirectTo: 'current', pathMatch: 'full' },
+  //{ path: '', component: HomeComponent },
   { path: 'current', component: CurrentConfigComponent },
   { path: 'performance', component: PerformanceComponent },
   { path: 'benchmarks', component: BenchmarksComponent },
