@@ -37,7 +37,6 @@
             }
           },
           "options": {
-            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets/",
@@ -57,8 +56,15 @@
             "styles": [
               "src/styles.scss"
             ],
-            "tsConfig": "tsconfig.app.json"
-          }
+            "tsConfig": "tsconfig.app.json",
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
+          },
+          "defaultConfiguration": ""
         },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
