@@ -16,10 +16,10 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
 
-    setTimeout(() => {
-      console.log('a');
-    },
-      5000);
+    // setTimeout(() => {
+    //   console.log('a');
+    // },
+    //   5000);
 
     this.route.events.subscribe(
       event => {
